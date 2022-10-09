@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int num1, num2;
-    scanf("%d %d", &num1, &num2);
-    printf("%d\n", num1 * (num2 % 10));
-    printf("%d\n", num1 * (num2 % 100 / 10));
-    printf("%d\n", num1 * (num2 / 100));
-    printf("%d\n", num1 * num2);
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n", a * (b % 10));
+    printf("%d\n", a * (b % 100 / 10));
+    printf("%d\n", a * (b / 100));
+    printf("%d\n", a * b);
 
     return 0;
 }
