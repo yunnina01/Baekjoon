@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void back(int arr[][9], int cnt){
+int arr[9][9], row[9][10], col[9][10], rec[9][10];
+
+void back(int cnt){
     int i, j;
     if(cnt == 81){
         for(i = 0; i < 9; i++){
@@ -11,49 +13,31 @@ void back(int arr[][9], int cnt){
         }
         exit(0);
     }
+    int x = cnt / 9, y = cnt % 9;
+    if(arr[x][y])
+        back(cnt + 1);
     else{
-        int row = cnt / 9, col = cnt % 9;
-        if(arr[row][col])
-            back(arr, cnt + 1);
-        else{
-            for(i = 1; i <= 9; i++){
-                int k, r_row, r_col, check = 0;
-                arr[row][col] = i;
-                for(j = 0; j < 9; j++){
-                    if((arr[row][j] == i && j != col) || (arr[j][col] == i && j != row))
-                        check = 1;
-                }
-                for(j = 1; j <= 7; j += 3){
-                    for(k = 1; k <= 7; k += 3){
-                        if(abs(j - row) <= 1 && abs(k - col) <= 1){
-                            r_row = j;
-                            r_col = k;
-                        }
-                    }
-                }
-                for(j = r_row - 1; j <= r_row + 1; j++){
-                    for(k = r_col - 1; k <= r_col + 1; k++){
-                        if(j == row && k == col)
-                            continue;
-                        if(arr[j][k] == i)
-                            check = 1;
-                    }
-                }
-                if(!check)
-                    back(arr, cnt + 1);
-                arr[row][col] = 0;
+        for(i = 1; i <= 9; i++){
+            if(!row[x][i] && !col[y][i] && !rec[x / 3 * 3 + y / 3][i]){
+                arr[x][y] = i;
+                row[x][i] = col[y][i] = rec[x / 3 * 3 + y / 3][i] = 1;
+                back(cnt + 1);
+                arr[x][y] = 0;
+                row[x][i] = col[y][i] = rec[x / 3 * 3 + y / 3][i] = 0;
             }
         }
     }
 }
 
 int main(){
-    int arr[9][9], i, j;
+    int i, j;
     for(i = 0; i < 9; i++){
-        for(j = 0; j < 9; j++)
+        for(j = 0; j < 9; j++){
             scanf("%d", &arr[i][j]);
+            row[i][arr[i][j]] = col[j][arr[i][j]] = rec[i / 3 * 3 + j / 3][arr[i][j]] = 1;
+        }
     }
-    back(arr, 0);
+    back(0);
 
     return 0;
 }
