@@ -1,26 +1,23 @@
 #include <stdio.h>
 
+int dp[100001], W[100], V[100];
+
 int max(int a, int b){
     return a > b ? a : b;
 }
 
 int main(){
-    int N, K, W, V, i, j;
+    int N, K, i, j;
     scanf("%d %d", &N, &K);
-    int dp[N + 1][K + 1];
-    for(i = 0; i <= K; i++)
-        dp[0][i] = 0;
+    for(i = 0; i < N; i++)
+        scanf("%d %d", &W[i], &V[i]);
     for(i = 1; i <= N; i++){
-        scanf("%d %d", &W, &V);
-        dp[i][0] = 0;
-        for(j = 1; j <= K; j++){
-            if(W > j)
-                dp[i][j] = dp[i - 1][j];
-            else
-                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - W] + V);
+        for(j = K; j > 0; j--){
+            if(W[i - 1] <= j)
+                dp[j] = max(dp[j], dp[j - W[i - 1]] + V[i - 1]);
         }
     }
-    printf("%d\n", dp[N][K]);
+    printf("%d\n", dp[K]);
     
     return 0;
 }
