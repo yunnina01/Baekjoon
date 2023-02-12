@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int ps[200001][26];
 
@@ -7,7 +6,7 @@ int main(){
     char S[200001], ch;
     int q, l, r, i, j;
     scanf("%s %d", S, &q);
-    for(i = 1; i <= strlen(S); i++){
+    for(i = 1; S[i] != '\0'; i++){
         for(j = 0; j < 26; j++)
             ps[i][j] = ps[i - 1][j];
         ps[i][S[i - 1] - 'a']++;
