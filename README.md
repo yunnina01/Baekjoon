@@ -46,7 +46,7 @@ C언어에 내장되어 있는 정렬 함수로, 시간복잡도가 O(NlogN) 이
 <br><br>
 
 * **냅색 문제 (Knapsack Problem)**  
-조합 최적화 문제의 일종으로, 배낭에 담을 수 있는 물건들의 가치가 최대가 되도록 하는 부분집합을 찾는 문제이다.  
+조합 최적화 문제의 일종으로, 배낭에 담을 수 있는 물건들의 가치가 최대인 부분집합을 찾는 문제이다.  
 일반적으로 그리디 알고리즘이나 동적 계획법으로 해결한다.  
 참고 : [배낭 문제](https://namu.wiki/w/%EB%B0%B0%EB%82%AD%20%EB%AC%B8%EC%A0%9C#s-2)
 <br><br>
@@ -72,7 +72,7 @@ C언어에 내장되어 있는 이진 탐색 함수이다.
     * base : 정렬된 배열의 포인터
     * nmemb : 정렬된 배열의 원소의 수
     * size : 정렬된 배열의 원소 하나의 크기
-    * compare : 비교 
+    * compare : 비교 논리
 <br><br>
 
 * **그래프와 순회**  
@@ -104,4 +104,13 @@ C언어에 내장되어 있는 이진 탐색 함수이다.
 * **유니온 파인드 (Union-Find)**  
 두 노드가 같은 그래프에 속하는지 판별하는 알고리즘이다.  
 서로소 집합이나 상호 배타적 집합(Disjoint-Set)으로도 불린다.
+<br><br>
+
+* **최소 신장 트리 (Minimum Spanning Tree)**  
+신장 트리는 그래프에서 모든 정점에 대한 최소한의 연결만을 남긴 그래프이다.  
+최소 신장 트리는 신장 트리들 중에서 간선의 가중치 합이 최소인 트리를 뜻한다.  
+특징 : [신장 트리](https://user-images.githubusercontent.com/100751725/221528323-91f2d166-8116-4134-b828-6fdfb8eced8c.png) , 
+[최소 신장 트리](https://user-images.githubusercontent.com/100751725/221528652-2cfa39d3-272e-480e-b679-1c8ef628162b.png)  
+알고리즘 : [크루스칼 알고리즘 (Kruskal's Algorithm)](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
+[프림 알고리즘 (Prim's Algorithm)](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
