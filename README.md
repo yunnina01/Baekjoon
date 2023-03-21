@@ -29,12 +29,8 @@ C언어에 내장되어 있는 정렬 함수로, 시간복잡도가 O(NlogN) 이
     * width : 정렬하고자 하는 배열의 원소 하나의 크기
     * compare : 비교 논리
   * int compare(const void* , const void* )  
-    정렬 방법을 정할 수 있으며, 숫자나 문자열, 구조체 등을 정렬할 수 있다.
-<br><br>
-
-* **2981번 : 검문**  
-여러 개의 수를 나누었을 때 나머지가 같은 수를 구하는 문제이다.  
-이론 : [검문](https://user-images.githubusercontent.com/100751725/210517191-39f8b011-bcbb-47ff-9463-d2c1883f4ad0.png)
+    정렬 방법을 정할 수 있으며, 숫자나 문자열, 구조체 등을 정렬할 수 있다.  
+    실수값들을 정렬하기 위해서는 주의해서 사용하여야 한다.
 <br><br>
 
 * **백트래킹**  
@@ -42,7 +38,7 @@ C언어에 내장되어 있는 정렬 함수로, 시간복잡도가 O(NlogN) 이
 <br><br>
 
 * **동적 계획법 (Dynamic Programming)**  
-특정 범위까지의 값을 구하기 위해서 그것과 다른 범위까지의 값을 이용하여 효율적으로 값을 구하는 알고리즘 설계 기법이다.
+특정 범위의 값을 구하기 위해 그것과 다른 범위의 값을 이용하여 효율적으로 값을 구하는 알고리즘 설계 기법이다.
 <br><br>
 
 * **냅색 문제 (Knapsack Problem)**  
@@ -62,7 +58,7 @@ C언어에 내장되어 있는 정렬 함수로, 시간복잡도가 O(NlogN) 이
 <br><br>
 
 * **분할 정복 (Divide and Conquer)**  
-크고 방대한 문제를 조금씩 나눠가면서 용이하게 해결할 수 있는 단위로 나눈 다음 다시 합치면서 해결하는 기법이다.
+크고 방대한 문제를 나눠가면서 해결하기 용이한 단위까지 나눈 다음 다시 합치면서 문제를 해결하는 기법이다.
   * 11401번 : 이항 계수 3  
   이항 계수를 페르마의 소정리를 이용하여 구하는 문제이다.  
   이론 : [페르마의 소정리](https://namu.wiki/w/%ED%8E%98%EB%A5%B4%EB%A7%88%EC%9D%98%20%EC%86%8C%EC%A0%95%EB%A6%AC)
@@ -92,27 +88,27 @@ C언어에 내장되어 있는 이진 탐색 함수이다.
 * **그래프와 순회**  
 그래프란 연결되어 있는 원소간의 관계를 표현한 자료구조이다.  
 순회 방법에는 깊이 우선 탐색(DFS)과 너비 우선 탐색(BFS)이 있다.  
-순회 방법 비교 : [그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
+그래프 순회 알고리즘 : [그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
 <br><br>
 
 * **최단 경로**  
 가중치 그래프에서 가중치 합이 최소가 되는 경로를 찾는 알고리즘이다.  
-다익스트라(Dijkstra), 플로이드 워셜 알고리즘 등이 있다.  
-다익스트라 알고리즘은 우선순위 큐를 이용하는데, 구현이 어려워 추가적인 이해가 필요하다.  
-플로이드 워셜 알고리즘은 3중 반복문으로 구현한다.
+최단 경로 알고리즘 : [다익스트라](https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
+[벨먼-포드](https://namu.wiki/w/%EB%B2%A8%EB%A8%BC-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%EB%B2%A8%EB%A7%8C-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
+[플로이드-워셜](https://namu.wiki/w/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
 
 * **투 포인터**  
 1차원 배열에서 각자 다른 원소를 가리키는 두 개의 포인터를 조작하여 원하는 결과를 얻는 기법이다.  
 대표적으로 특정 합을 가지는 부분 수열을 찾는 문제에 사용된다.  
   * 1450번 냅색문제  
-  수학적 이론 : 정리 필요
+  이론 : 정리 필요
 <br><br>
 
 * **트리와 순회**  
 트리란 그래프의 일종으로, 사이클이 없는 연결 그래프이다.  
 순회 방법에는 전위 순회(Preorder), 중위 순회(Inorder), 후위 순회(Postorder)가 있다.  
-순회 방법 비교 : [트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
+트리 순회 알고리즘 : [트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
 <br><br>
 
 * **유니온 파인드 (Union-Find)**  
@@ -125,6 +121,17 @@ C언어에 내장되어 있는 이진 탐색 함수이다.
 최소 신장 트리는 신장 트리들 중에서 간선의 가중치 합이 최소인 트리를 뜻한다.  
 특징 : [신장 트리](https://user-images.githubusercontent.com/100751725/221528323-91f2d166-8116-4134-b828-6fdfb8eced8c.png) , 
 [최소 신장 트리](https://user-images.githubusercontent.com/100751725/221528652-2cfa39d3-272e-480e-b679-1c8ef628162b.png)  
-알고리즘 : [크루스칼 알고리즘 (Kruskal's Algorithm)](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
-[프림 알고리즘 (Prim's Algorithm)](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+최소 신장 트리 알고리즘 : [크루스칼 (Kruskal's Algorithm)](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
+[프림 (Prim's Algorithm)](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+<br><br>
+
+* **CCW 알고리즘 (신발끈 공식)**  
+세 점의 방향 관계나 선분의 교차판별을 하는데 사용하는 알고리즘이다.  
+이론 : [신발끈 공식](https://namu.wiki/w/%EC%8B%A0%EB%B0%9C%EB%81%88%20%EA%B3%B5%EC%8B%9D)  
+세 점의 방향 관계에서 결과값이 양수이면 반시계방향, 0이면 평행, 음수이면 시계방향이다.  
+선분교차판별에서는 값이 0보다 작거나 같으면 일반적으로 교차한다.  
+반례 : [선분교차판별 반례](https://user-images.githubusercontent.com/100751725/226580880-932b1ee9-c394-4b38-9487-0daf4b44787e.png)  
+  * 25308번 : 방사형 그래프  
+  CCW 알고리즘과 브루트포스 알고리즘을 사용하여 해결할 수 있는 문제이다.  
+  이론 : [삼각형의 넓이 공식 응용](https://user-images.githubusercontent.com/100751725/226583296-024643a6-03f4-42f1-9fc6-9dd788956204.png)
 <br><br>
