@@ -6,7 +6,7 @@ typedef struct{
 }HW;
 
 HW hw[1000];
-int day[1001], last, res;
+int day[1001], res;
 
 int desc(const void *a, const void *b){
     return ((HW*)b)->w - ((HW*)a)->w;
@@ -19,17 +19,14 @@ int main(){
         scanf("%d %d", &hw[i].d, &hw[i].w);
     qsort(hw, N, sizeof(HW), desc);
     for(i = 0; i < N; i++){
-        if(hw[i].d > last)
-            last = hw[i].d;
         for(j = hw[i].d; j > 0; j--){
             if(!day[j]){
-                day[j] = hw[i].w;
+                day[j] = 1;
+                res += hw[i].w;
                 break;
             }
         }
     }
-    for(i = 1; i <= last; i++)
-        res += day[i];
     printf("%d\n", res);
 
     return 0;
