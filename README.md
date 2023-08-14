@@ -1,7 +1,8 @@
 # Baekjoon
 
 백준에서 해결한 문제에 대한 답을 업로드하는 저장소입니다.  
-C언어(C99)를 사용하여 문제를 해결하였습니다.  
+주로 C언어(C99)를 사용하여 문제를 해결하였습니다.  
+Python(Python3) 연습용으로도 사용하였습니다.  
 
 백준 : https://www.acmicpc.net  
 백준 프로필 : https://www.acmicpc.net/user/yunnina01  
