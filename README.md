@@ -1,6 +1,6 @@
 # Baekjoon
 
-백준에서 해결한 문제에 대한 답을 업로드하는 저장소입니다.  
+백준에서 해결한 알고리즘 문제에 대한 답을 업로드하는 저장소입니다.  
 주로 C언어(C99)를 사용하여 문제를 해결하였습니다.  
 Python(Python3) 연습용으로도 사용하였습니다.  
 
@@ -9,9 +9,13 @@ Python(Python3) 연습용으로도 사용하였습니다.
 solved.ac : https://solved.ac/profile/yunnina01
 <br><br><br>
 
-## 백준 알고리즘을 풀면서 배운 점 (부족한 점)
+## 백준 문제를 풀면서 배운 점
 
-* **10757번 : 큼 수 A + B**  
+* **프로그래밍 언어 정리**  
+[C](https://github.com/yunnina01/Baekjoon/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/C)
+<br><br>
+
+* **10757번 : 큰 수 A + B**  
 최대 만 자리 숫자 2개를 더하는 문제이다.  
 정수 자료형은 모두 오버플로우가 발생하므로 문자열로 받는다.  
 문자열 2개를 뒤집어서 계산한 뒤 얻은 결과를 다시 뒤집는다.
@@ -20,18 +24,6 @@ solved.ac : https://solved.ac/profile/yunnina01
 * **에라토스테네스의 체**  
 소수를 빠르게 구할 수 있는 알고리즘이다.  
 이론 : [에라토스테네스의 체](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)
-<br><br>
-
-* **qsort()**  
-C언어에 내장되어 있는 정렬 함수로, 시간복잡도가 O(NlogN) 이다.
-  * void qsort(void* base , size_t nel , size_t width , int (* compare)(const void* , const void* ))
-    * base : 정렬하고자 하는 배열의 포인터
-    * nel : 정렬하고자 하는 배열의 원소의 수
-    * width : 정렬하고자 하는 배열의 원소 하나의 크기
-    * compare : 비교 논리
-  * int compare(const void* , const void* )  
-    정렬 방법을 정할 수 있으며, 숫자나 문자열, 구조체 등을 정렬할 수 있다.  
-    실수값들을 정렬하기 위해서는 주의해서 사용하여야 한다.
 <br><br>
 
 * **백트래킹**  
@@ -63,25 +55,6 @@ C언어에 내장되어 있는 정렬 함수로, 시간복잡도가 O(NlogN) 이
 * **페르마의 소정리**  
 임의의 소수 p와 서로소인 한 수의 (p - 1)제곱을 p로 나눈 나머지가 1이라는 정리로, 정수론의 기본이 된다.  
 이론 : [페르마의 소정리](https://namu.wiki/w/%ED%8E%98%EB%A5%B4%EB%A7%88%EC%9D%98%20%EC%86%8C%EC%A0%95%EB%A6%AC)
-<br><br>
-
-* **memset()**  
-메모리의 내용(값)을 원하는 크기만큼 특정 값으로 초기화하는 함수이다.  
-1바이트 단위로 초기화 하므로 0이나 char타입으로만 초기화할 수 있다.
-  * void* memset(void* ptr, int value, size_t num)
-    * ptr : 초기화하고자 하는 메모리의 시작 주소
-    * value : 초기화할 값
-    * num : 초기화할 메모리의 크기
-<br><br>
-
-* **bsearch()**  
-C언어에 내장되어 있는 이진 탐색 함수이다.
-  * void* bsearch(const void* key , const void* base , size_t nmemb , size_t size , int (* compare)(const void* , const void* ))
-    * key : 찾을 값
-    * base : 정렬된 배열의 포인터
-    * nmemb : 정렬된 배열의 원소의 수
-    * size : 정렬된 배열의 원소 하나의 크기
-    * compare : 비교 논리
 <br><br>
 
 * **Lower Bound / Upper Bound**  
