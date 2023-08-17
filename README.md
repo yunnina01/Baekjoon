@@ -7,12 +7,14 @@ Python(Python3) 연습용으로도 사용하였습니다.
 백준 : https://www.acmicpc.net  
 백준 프로필 : https://www.acmicpc.net/user/yunnina01  
 solved.ac : https://solved.ac/profile/yunnina01
-<br><br><br>
+<br><br>
 
-## 백준 문제를 풀면서 배운 점
+***
+### 백준 문제를 풀면서 배운 알고리즘
 
 * **프로그래밍 언어 정리**  
-[C](https://github.com/yunnina01/Baekjoon/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/C)
+[C](https://github.com/yunnina01/Baekjoon/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/C) ,
+[PYTHON](https://github.com/yunnina01/Baekjoon/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/PYTHON)
 <br><br>
 
 * **10757번 : 큰 수 A + B**  
@@ -21,12 +23,12 @@ solved.ac : https://solved.ac/profile/yunnina01
 문자열 2개를 뒤집어서 계산한 뒤 얻은 결과를 다시 뒤집는다.
 <br><br>
 
-* **에라토스테네스의 체**  
+* **에라토스테네스의 체 (Sieve of Eratosthenes)**  
 소수를 빠르게 구할 수 있는 알고리즘이다.  
 이론 : [에라토스테네스의 체](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)
 <br><br>
 
-* **백트래킹**  
+* **백트래킹 (Backtracking)**  
 해를 찾는 도중 해가 아니면 다시 되돌아가서 해를 찾아가는 기법이다.
 <br><br>
 
@@ -40,11 +42,11 @@ solved.ac : https://solved.ac/profile/yunnina01
 참고 : [배낭 문제](https://namu.wiki/w/%EB%B0%B0%EB%82%AD%20%EB%AC%B8%EC%A0%9C#s-2)
 <br><br>
 
-* **누적 합**  
+* **누적 합 (Prefix Sum)**  
 앞에서부터 차례대로 누적된 합을 구해놓고 이를 이용해서 구간의 합을 구하는 기법이다.
 <br><br>
 
-* **그리디 알고리즘**  
+* **그리디 알고리즘 (Greedy Algorithm)**  
 현재 단계에서 최적의 해를 선택해나가는 기법이다.
 <br><br>
 
@@ -52,7 +54,7 @@ solved.ac : https://solved.ac/profile/yunnina01
 크고 방대한 문제를 나눠가면서 해결하기 용이한 단위까지 나눈 다음 다시 합치면서 문제를 해결하는 기법이다.
 <br><br>
 
-* **페르마의 소정리**  
+* **페르마의 소정리 (Fermat's little Theorem)**  
 임의의 소수 p와 서로소인 한 수의 (p - 1)제곱을 p로 나눈 나머지가 1이라는 정리로, 정수론의 기본이 된다.  
 이론 : [페르마의 소정리](https://namu.wiki/w/%ED%8E%98%EB%A5%B4%EB%A7%88%EC%9D%98%20%EC%86%8C%EC%A0%95%EB%A6%AC)
 <br><br>
@@ -77,7 +79,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 [플로이드-워셜](https://namu.wiki/w/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
 
-* **투 포인터**  
+* **투 포인터 (Two Pointer)**  
 1차원 배열에서 각자 다른 원소를 가리키는 두 개의 포인터를 조작하여 원하는 결과를 얻는 기법이다.  
 대표적으로 특정 합을 가지는 부분 수열을 찾는 문제에 사용된다.
 <br><br>
@@ -116,7 +118,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 * **비트마스크 (BitMask)**  
 이진수를 사용하는 컴퓨터의 연산 방식을 이용해, 정수의 이진수 표현을 자료구조로 쓰는 기법이다.  
 장점 : 수행 시간이 빠르고, 메모리 사용량이 적다.  
-비트 연산자 : AND(&), OR(|), XOR(^), NOT(~), Shift(<<, >>)  
+비트 연산자 : AND(&) , OR(|) , XOR(^) , NOT(~) , Shift(<< , >>)  
 집합 구현 : [연산](https://github.com/jws1218/insta-clone/assets/100751725/d60da524-88a4-49df-9f6f-463462ad8fad)
 <br><br>
 
@@ -125,16 +127,16 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 이론 : [KMP 알고리즘](https://chanhuiseok.github.io/posts/algo-14/)
 <br><br>
 
-* **위상 정렬(Topological Sorting)**  
+* **위상 정렬 (Topological Sorting)**  
 방향 그래프에서 간선이 한 방향을 가르키도록 정점들을 나열하는 알고리즘이다.  
 순서가 정해져 있는 작업을 차례대로 수행해야 할 때 사용할 수 있다.
 <br><br>
 
-* **최소 공통 조상(Lowest Common Ancestor)**  
+* **최소 공통 조상 (Lowest Common Ancestor)**  
 트리에서 임의의 두 정점이 갖는 가장 가까운 조상 정점을 의미한다.
 <br><br>
 
-* **강한 연결 요소(Strongly Connected Component)**  
+* **강한 연결 요소 (Strongly Connected Component)**  
 방향 그래프에서 모든 정점이 모든 다른 정점에 도달 가능한 경우, 강하게 연결(상호 연결) 되었다고 한다.  
 강한 연결 요소는 부분 그래프의 모든 정점이 강하게 연결된 임의의 방향 그래프를 말한다.  
 강한 연결 요소 알고리즘 :
@@ -142,7 +144,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 [타잔](https://ko.wikipedia.org/wiki/%EA%B0%95%ED%95%9C_%EC%97%B0%EA%B2%B0_%EC%9A%94%EC%86%8C)
 <br><br>
 
-* **세그먼트 트리(Segment Tree)**  
+* **세그먼트 트리 (Segment Tree)**  
 여러 개의 데이터가 존재할 때, 특정 구간의 합(최댓값, 최솟값, 곱 등)을 구하는 데 사용하는 자료구조이다.  
 이진 트리 형태이며, 특정 구간의 합을 가장 빠르게 구할 수 있다.  
 이론 : [세그먼트 트리](https://book.acmicpc.net/ds/segment-tree)  
