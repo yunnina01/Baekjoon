@@ -32,7 +32,7 @@ print(bisect_left(lst, 3), bisect_right(lst, 5), sep = '\n')
 <br>
 
 * **Counter**  
-리스트의 각 요소들이 몇 번 나오는지 딕셔너리 형태로 반환 해준다.
+리스트의 각 요소들이 몇 번 나오는지 딕셔너리 형태로 반환해 준다.
 
 ``` Python
 from collections import Counter
@@ -43,7 +43,7 @@ dic = Counter(lst)
 <br>
 
 * **deque**  
-deque은 스택과 큐의 기능을 모두 가지는 자료구조로, 출입구가 앞뒤로 존재한다.
+스택과 큐의 기능을 모두 가지는 자료구조로, 출입구가 앞뒤로 존재한다.
 
 ``` Python
 from collections import deque
@@ -53,5 +53,16 @@ dq.appendleft(1)
 dq.append(4)
 dq.popleft()
 dq.pop()
+```
+<br>
+
+* **enumerate**  
+리스트의 원소에 순서값을 부여해주는 함수이다.  
+리스트의 원소와 인덱스를 튜플 형태로 반환해 준다.
+
+``` Python
+lst = ['A', 'B', 'C', 'D']
+for i, item in enumerate(lst, start = 1):
+        print(f'{i}번째 값은 {item}입니다.')
 ```
 <br>
