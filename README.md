@@ -13,8 +13,8 @@ solved.ac : https://solved.ac/profile/yunnina01
 ### 백준 문제를 풀면서 배운 알고리즘
 
 * **프로그래밍 언어 정리**  
-[C](https://github.com/yunnina01/Baekjoon/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/C) ,
-[PYTHON](https://github.com/yunnina01/Baekjoon/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/PYTHON)
+[C](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/C/README.md) / 
+[Python](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/Python/README.md)
 <br><br>
 
 * **10757번 : 큰 수 A + B**  
@@ -68,14 +68,14 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 * **그래프와 순회**  
 그래프란 연결되어 있는 원소간의 관계를 표현한 자료구조이다.  
 순회 방법에는 깊이 우선 탐색(DFS)과 너비 우선 탐색(BFS)이 있다.  
-그래프 순회 알고리즘 :[그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
+그래프 순회 알고리즘 : [그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
 <br><br>
 
 * **최단 경로**  
 가중치 그래프에서 가중치 합이 최소가 되는 경로를 찾는 알고리즘이다.  
 최단 경로 알고리즘 :
-[다익스트라](https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
-[벨먼-포드](https://namu.wiki/w/%EB%B2%A8%EB%A8%BC-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%EB%B2%A8%EB%A7%8C-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
+[다익스트라](https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
+[벨먼-포드](https://namu.wiki/w/%EB%B2%A8%EB%A8%BC-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%EB%B2%A8%EB%A7%8C-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
 [플로이드-워셜](https://namu.wiki/w/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
 
@@ -99,10 +99,10 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 신장 트리는 그래프에서 모든 정점에 대한 최소한의 연결만을 남긴 그래프이다.  
 최소 신장 트리는 신장 트리들 중에서 간선의 가중치 합이 최소인 트리를 뜻한다.  
 특징 :
-[신장 트리](https://user-images.githubusercontent.com/100751725/221528323-91f2d166-8116-4134-b828-6fdfb8eced8c.png) , 
+[신장 트리](https://user-images.githubusercontent.com/100751725/221528323-91f2d166-8116-4134-b828-6fdfb8eced8c.png) / 
 [최소 신장 트리](https://user-images.githubusercontent.com/100751725/221528652-2cfa39d3-272e-480e-b679-1c8ef628162b.png)  
 최소 신장 트리 알고리즘 :
-[크루스칼 (Kruskal's Algorithm)](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) , 
+[크루스칼 (Kruskal's Algorithm)](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
 [프림 (Prim's Algorithm)](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
 
@@ -140,7 +140,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 방향 그래프에서 모든 정점이 모든 다른 정점에 도달 가능한 경우, 강하게 연결(상호 연결) 되었다고 한다.  
 강한 연결 요소는 부분 그래프의 모든 정점이 강하게 연결된 임의의 방향 그래프를 말한다.  
 강한 연결 요소 알고리즘 :
-[코사라주](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EB%9D%BC%EC%A3%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) ,
+[코사라주](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EB%9D%BC%EC%A3%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
 [타잔](https://ko.wikipedia.org/wiki/%EA%B0%95%ED%95%9C_%EC%97%B0%EA%B2%B0_%EC%9A%94%EC%86%8C)
 <br><br>
 
