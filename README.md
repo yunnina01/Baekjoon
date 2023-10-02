@@ -155,3 +155,9 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 휩쓸고 지나가며 문제를 해결하는 방식으로, 특정 기준에 따라 정렬한 후 순서대로 처리하는 알고리즘이다.
 <br><br>
 
+* **볼록 껍질 (Convex Hull)**  
+집합으로 주어진 점이나 영역을 모두 포함하는 가장 작은 볼록 집합(다각형)이다.  
+볼록 껍질 알고르즘 :
+[그레이엄 스캔](https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%97%84_%EC%8A%A4%EC%BA%94) /
+[선물 포장 (짐꾸리기)](https://ko.wikipedia.org/wiki/%EC%84%A0%EB%AC%BC_%ED%8F%AC%EC%9E%A5_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+<br><br>
