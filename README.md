@@ -13,8 +13,8 @@ solved.ac : https://solved.ac/profile/yunnina01
 ### 백준 문제를 풀면서 배운 알고리즘
 
 * **프로그래밍 언어 정리**  
-[C](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/C/README.md) / 
-[Python](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%EC%A0%95%EB%A6%AC/Python/README.md)
+[C](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/C.md) / 
+[Python](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Python.md)
 <br><br>
 
 * **10757번 : 큰 수 A + B**  
