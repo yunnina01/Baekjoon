@@ -1,8 +1,7 @@
 # Baekjoon
 
 백준에서 해결한 알고리즘 문제에 대한 답을 업로드하는 저장소입니다.  
-주로 C언어(C99)를 사용하여 문제를 해결하였습니다.  
-Python(Python3) 연습용으로도 사용하였습니다.  
+C(C99), Java(Java11), Python(Python3)을 사용하였습니다.  
 
 백준 : https://www.acmicpc.net  
 백준 프로필 : https://www.acmicpc.net/user/yunnina01  
@@ -13,7 +12,8 @@ solved.ac : https://solved.ac/profile/yunnina01
 ### 백준 문제를 풀면서 배운 알고리즘
 
 * **프로그래밍 언어 정리**  
-[C](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/C.md) / 
+[C](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/C.md) /
+[Java](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Java.md) / 
 [Python](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Python.md)
 <br><br>
 
