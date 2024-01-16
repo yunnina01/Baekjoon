@@ -17,8 +17,8 @@ solved.ac : https://solved.ac/profile/yunnina01
 [Python](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Python.md)
 <br><br>
 
-* **10757번 : 큰 수 A + B**  
-최대 만 자리 숫자 2개를 더하는 문제이다.  
+* **큰 수 덧셈**  
+자료형의 범위를 벗어나는 숫자 2개를 더하는 문제이다.  
 정수 자료형은 모두 오버플로우가 발생하므로 문자열로 받는다.  
 문자열 2개를 뒤집어서 계산한 뒤 얻은 결과를 다시 뒤집는다.
 <br><br>
@@ -62,18 +62,18 @@ solved.ac : https://solved.ac/profile/yunnina01
 * **Lower Bound / Upper Bound**  
 Lower Bound는 key보다 크거나 같은 값이 처음 나타나는 위치이고,  
 Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.  
-이론 및 구현 : [Lower Bound / Upper Bound](https://yoongrammer.tistory.com/105)
+이론 : [Lower Bound / Upper Bound](https://yoongrammer.tistory.com/105)
 <br><br>
 
-* **그래프와 순회**  
+* **그래프와 순회 (Graph)**  
 그래프란 연결되어 있는 원소간의 관계를 표현한 자료구조이다.  
 순회 방법에는 깊이 우선 탐색(DFS)과 너비 우선 탐색(BFS)이 있다.  
-그래프 순회 알고리즘 : [그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
+알고리즘 : [그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
 <br><br>
 
-* **최단 경로**  
+* **최단 경로 (Shortest Path)**  
 가중치 그래프에서 가중치 합이 최소가 되는 경로를 찾는 알고리즘이다.  
-최단 경로 알고리즘 :
+알고리즘 :
 [다익스트라](https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
 [벨먼-포드](https://namu.wiki/w/%EB%B2%A8%EB%A8%BC-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%EB%B2%A8%EB%A7%8C-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
 [플로이드-워셜](https://namu.wiki/w/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
@@ -84,15 +84,16 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 대표적으로 특정 합을 가지는 부분 수열을 찾는 문제에 사용된다.
 <br><br>
 
-* **트리와 순회**  
+* **트리와 순회 (Tree)**  
 트리란 그래프의 일종으로, 사이클이 없는 연결 그래프이다.  
 순회 방법에는 전위 순회(Preorder), 중위 순회(Inorder), 후위 순회(Postorder)가 있다.  
-트리 순회 알고리즘 : [트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
+알고리즘 : [트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
 <br><br>
 
-* **유니온 파인드 (Union-Find)**  
+* **분리 집합 (Disjoint Set)**  
 두 노드가 같은 그래프에 속하는지 판별하는 알고리즘이다.  
-서로소 집합이나 상호 배타적 집합(Disjoint-Set)으로도 불린다.
+서로소 집합이나 상호 배타적 집합으로도 불린다.  
+알고리즘 : [유니온 파인드](https://velog.io/@mu1616/%EB%B6%84%EB%A6%AC%EC%A7%91%ED%95%A9Disjoint-set)
 <br><br>
 
 * **최소 신장 트리 (Minimum Spanning Tree)**  
@@ -101,9 +102,9 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 특징 :
 [신장 트리](https://user-images.githubusercontent.com/100751725/221528323-91f2d166-8116-4134-b828-6fdfb8eced8c.png) / 
 [최소 신장 트리](https://user-images.githubusercontent.com/100751725/221528652-2cfa39d3-272e-480e-b679-1c8ef628162b.png)  
-최소 신장 트리 알고리즘 :
-[크루스칼 (Kruskal's Algorithm)](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
-[프림 (Prim's Algorithm)](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+알고리즘 :
+[크루스칼](https://namu.wiki/w/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
+[프림](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
 
 * **CCW 알고리즘 (신발끈 공식)**  
@@ -119,12 +120,12 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 이진수를 사용하는 컴퓨터의 연산 방식을 이용해, 정수의 이진수 표현을 자료구조로 쓰는 기법이다.  
 장점 : 수행 시간이 빠르고, 메모리 사용량이 적다.  
 비트 연산자 : AND(&) , OR(|) , XOR(^) , NOT(~) , Shift(<< , >>)  
-집합 구현 : [연산](https://github.com/jws1218/insta-clone/assets/100751725/d60da524-88a4-49df-9f6f-463462ad8fad)
+이론 : [연산](https://github.com/jws1218/insta-clone/assets/100751725/d60da524-88a4-49df-9f6f-463462ad8fad)
 <br><br>
 
 * **KMP 알고리즘**  
 문자열 검색 알고리즘으로, 불필요한 비교를 없애 성능을 개선시킨 알고리즘이다.  
-이론 : [KMP 알고리즘](https://chanhuiseok.github.io/posts/algo-14/)
+이론 : [KMP](https://chanhuiseok.github.io/posts/algo-14/)
 <br><br>
 
 * **위상 정렬 (Topological Sorting)**  
@@ -139,7 +140,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 * **강한 연결 요소 (Strongly Connected Component)**  
 방향 그래프에서 모든 정점이 모든 다른 정점에 도달 가능한 경우, 강하게 연결(상호 연결) 되었다고 한다.  
 강한 연결 요소는 부분 그래프의 모든 정점이 강하게 연결된 임의의 방향 그래프를 말한다.  
-강한 연결 요소 알고리즘 :
+알고리즘 :
 [코사라주](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EB%9D%BC%EC%A3%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
 [타잔](https://ko.wikipedia.org/wiki/%EA%B0%95%ED%95%9C_%EC%97%B0%EA%B2%B0_%EC%9A%94%EC%86%8C)
 <br><br>
@@ -148,7 +149,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 여러 개의 데이터가 존재할 때, 특정 구간의 합(최댓값, 최솟값, 곱 등)을 구하는 데 사용하는 자료구조이다.  
 이진 트리 형태이며, 특정 구간의 합을 가장 빠르게 구할 수 있다.  
 이론 : [세그먼트 트리](https://book.acmicpc.net/ds/segment-tree)  
-참고 : [느리게 갱신되는 세그먼트 트리 (Segment Tree With Lazy Propagation)](https://book.acmicpc.net/ds/segment-tree-lazy-propagation)
+참고 : [느리게 갱신되는 세그먼트 트리](https://book.acmicpc.net/ds/segment-tree-lazy-propagation)
 <br><br>
 
 * **스위핑 (Sweeping)**  
@@ -157,7 +158,31 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 
 * **볼록 껍질 (Convex Hull)**  
 집합으로 주어진 점이나 영역을 모두 포함하는 가장 작은 볼록 집합(다각형)이다.  
-볼록 껍질 알고르즘 :
+알고리즘 :
 [그레이엄 스캔](https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%97%84_%EC%8A%A4%EC%BA%94) /
 [선물 포장 (짐꾸리기)](https://ko.wikipedia.org/wiki/%EC%84%A0%EB%AC%BC_%ED%8F%AC%EC%9E%A5_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+<br><br>
+
+* **회전하는 캘리퍼스 (Rotating Calipers)**  
+가장 먼 두 점의 거리를 구할 때 사용하는 알고리즘이다.  
+볼록 껍질(Convex Hull)을 기반으로 동작한다.  
+알고리즘 : [회전하는 캘리퍼스](https://hellogaon.tistory.com/40)
+<br><br>
+
+* **이분 매칭 (Bipartite Matching)**  
+이분 그래프에서 가능한 가장 많은 매칭 수를 찾는 알고리즘이다.  
+알고리즘 : [이분 매칭](https://loosie.tistory.com/643)
+<br><br>
+
+* **최대 유량 (Network Flow)**  
+그래프에서 두 정점 사이에 얼마나 많은 유량(flow)을 보낼 수 있는지 계산하는 알고리즘이다.  
+최대 유량 (Maximum Flow) 혹은 네트워크 유량 (Network Flow)이라고 한다.  
+알고리즘 : [포드-풀커슨 / 에드몬드 카프](https://unorderedmap.tistory.com/6)
+<br><br>
+
+* **최소 비용 최대 유량 (Minimum Cost Maximum Flow)**  
+최소 비용을 구하여 최소 비용에 해당하는 간선으로 가능한 최대 유량을 구하는 알고리즘이다.  
+즉, 최단 거리에서의 최대 유량을 구하는 알고리즘이다.  
+이론 : [MCMF](https://www.crocus.co.kr/1090)  
+알고리즘 : [SPFA](https://gina65.tistory.com/26)
 <br><br>
