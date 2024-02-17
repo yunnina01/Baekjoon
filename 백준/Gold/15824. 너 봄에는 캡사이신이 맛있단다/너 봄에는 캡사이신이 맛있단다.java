@@ -2,34 +2,36 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static final long MOD = 1_000_000_007L;
-    static int[] pows;
+    static final int MOD = 1_000_000_007;
+    static long[] dp;
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int N = Integer.parseInt(br.readLine());
         int[] scoville = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).sorted().toArray();
 
-        pows = new int[N + 1];
+        dp = new long[N + 1];
+        dp[0] = 1;
         long res = 0;
-        for(int i = 0; i < N - 1; i++) {
-            for(int j = i + 1; j < N; j++)
-                res += ((long)(scoville[j] - scoville[i])) * pow(j - i - 1) % MOD;
+        for(int i = 0; i < N; i++) {
+            res += scoville[i] * pow(i);
+            res -= scoville[i] * pow(N - i - 1);
+            res %= MOD;
         }
-        bw.write(res % MOD + "\n");
+        bw.write(res + "\n");
         br.close();
         bw.flush();
         bw.close();
     }
 
-    static long pow(int k){
-        if(k < 2)
-            return k+1;
-        if(pows[k] != 0)
-            return pows[k];
-        long prev = pow(k / 2);
-        return pows[k] = (int)(k % 2 == 0 ? (prev * prev) % MOD : (prev * prev * 2) % MOD);
+    static long pow(int x) {
+        if(dp[x] != 0)
+            return dp[x];
+        long half = pow(x / 2);
+        if(x % 2 == 0)
+            return dp[x] = half * half % MOD;
+        return dp[x] = half * half * 2 % MOD;
     }
 }
