@@ -12,9 +12,9 @@ solved.ac : https://solved.ac/profile/yunnina01
 ### 백준 문제를 풀면서 배운 알고리즘
 
 * **프로그래밍 언어 정리**  
-[C](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/C.md) /
-[Java](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Java.md) / 
-[Python](https://github.com/yunnina01/PrivateStudy/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Python.md)
+[C](https://github.com/yunnina01/PrivateStudy/blob/main/%EC%96%B8%EC%96%B4/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/C.md) /
+[Java](https://github.com/yunnina01/PrivateStudy/blob/main/%EC%96%B8%EC%96%B4/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Java.md) / 
+[Python](https://github.com/yunnina01/PrivateStudy/blob/main/%EC%96%B8%EC%96%B4/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4/Python.md)
 <br><br>
 
 * **큰 수 덧셈**  
@@ -185,4 +185,32 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 즉, 최단 거리에서의 최대 유량을 구하는 알고리즘이다.  
 이론 : [MCMF](https://www.crocus.co.kr/1090)  
 알고리즘 : [SPFA](https://gina65.tistory.com/26)
+<br><br>
+
+* **Mo's Algorithm**
+
+<br><br>
+
+* **포함-배제 정리**
+
+<br><br>
+
+* **빠른 소수 판정**
+
+<br><br>
+
+* **고속 푸리에 변환**
+
+<br><br>
+
+* **Manacher 알고리즘**
+
+<br><br>
+
+* **Z 알고리즘**
+
+<br><br>
+
+* **아호-코라식 알고리즘**
+
 <br><br>
