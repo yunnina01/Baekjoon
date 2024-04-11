@@ -177,7 +177,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 * **최대 유량 (Network Flow)**  
 그래프에서 두 정점 사이에 얼마나 많은 유량(flow)을 보낼 수 있는지 계산하는 알고리즘이다.  
 최대 유량 (Maximum Flow) 혹은 네트워크 유량 (Network Flow)이라고 한다.  
-알고리즘 : [포드-풀커슨 / 에드몬드 카프](https://unorderedmap.tistory.com/6)
+알고리즘 : [포드-풀커슨 / 에드몬드 카프](https://unorderedmap.tistory.com/6) / [디닉](https://www.crocus.co.kr/1088)
 <br><br>
 
 * **최소 비용 최대 유량 (Minimum Cost Maximum Flow)**  
@@ -187,20 +187,50 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 알고리즘 : [SPFA](https://gina65.tistory.com/26)
 <br><br>
 
-* **Mo's Algorithm**
-
+* **오일러 경로 테크닉 (Euler Tour Technique)**  
+트리의 정점들에서 연속성을 찾기 어려워 트리에 구간 쿼리를 적용하는 것은 어렵다.  
+오일러 경로 테크닉은 특정 형태의 쿼리를 처리하기 위한 알고리즘이다.  
+이론 : [오일러 경로 테크닉](https://david0506.tistory.com/55)
 <br><br>
 
-* **포함-배제 정리**
-
+* **Mo's Algorithm**  
+업데이트가 없는 구간 쿼리를 처리하는 알고리즘이다.  
+√decomposition와 비슷한 아이디어를 이용해 쿼리의 순서를 재배치해서 효율적으로 쿼리를 수행한다.  
+이론 : [Mo's Algorithm](https://justicehui.github.io/hard-algorithm/2019/06/17/MoAlgorithm/)  
+참고 : [Sqrt Decomposition](https://justicehui.github.io/medium-algorithm/2019/03/03/SqrtDecomposition/)
 <br><br>
 
-* **빠른 소수 판정**
-
+* **뤼카의 정리 (Lucas Theorem)**  
+이항계수를 구하는 정리로, 빠른 시간복잡도를 가진다.  
+이론 : [뤼카의 정리](https://ps.mjstudio.net/lucas)
 <br><br>
 
-* **고속 푸리에 변환**
+* **확장된 유클리드 호제법 (Extended Euclidean Algorithm)**  
+유클리드 알고리즘은 a, b의 최대공약수 GCD(a, b)를 구하는 알고리즘이다.  
+확장 유클리드 알고리즘은 as + bt = GCD(a, b)를 만족하게 하는 정수 s, t를 구하는 알고리즘이다.  
+gcd가 1인 경우는 모듈러 연산에서의 곱셈의 역원을 구하는데 사용하기도 한다.  
+이론 : [확장된 유클리드](https://thfist-1071.tistory.com/251)
+<br><br>
 
+* **중국인의 나머지 정리 (Chinese Remainder Theorem)**  
+연립 합동식의 해의 존재성과 유일성을 증명하는 정리이다.  
+이론 : [중국인의 나머지 정리](https://ohgym.tistory.com/20)
+<br><br>
+
+* **밀러-라빈 소수판별법 (Miller-Rabin Primality Test)**  
+주어진 수가 소수인지 아닌지를 판별하는 알고리즘이다.  
+이론 : [밀러-라빈 소수판별법](https://goodbyefin.tistory.com/47)
+<br><br>
+
+* **폴라드 로 알고리즘 (Pollard's rho Algorithm)**  
+저장 공간을 적게 사용하면서 빠르게 소인수분해를 할 수 있는 알고리즘이다.  
+이론 : [폴라드 로 소인수분해](https://blog.naver.com/mym0404/222515973684)
+<br><br>
+
+* **고속 푸리에 변환 (Fast Fourier Transform)**  
+두 벡터의 합성곱을 계산하는 데 유용한 알고리즘이다.
+즉, 두 N차 다항식의 곱의 계수들을 빠르게 계산할 수 있는 알고리즘이다.  
+이론 : [고속 푸리에 변환](https://tistory.joonhyung.xyz/6)
 <br><br>
 
 * **Manacher 알고리즘**
@@ -208,6 +238,10 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 <br><br>
 
 * **Z 알고리즘**
+
+<br><br>
+
+* **접미사 배열 / LCP 배열**
 
 <br><br>
 
