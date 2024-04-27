@@ -65,7 +65,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 이론 : [Lower Bound / Upper Bound](https://yoongrammer.tistory.com/105)
 <br><br>
 
-* **그래프와 순회 (Graph)**  
+* **그래프 (Graph)**  
 그래프란 연결되어 있는 원소간의 관계를 표현한 자료구조이다.  
 순회 방법에는 깊이 우선 탐색(DFS)과 너비 우선 탐색(BFS)이 있다.  
 알고리즘 : [그래프 순회](https://user-images.githubusercontent.com/100751725/221105356-fca74b74-f903-4444-b974-e433757fa02d.png)
@@ -84,7 +84,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 대표적으로 특정 합을 가지는 부분 수열을 찾는 문제에 사용된다.
 <br><br>
 
-* **트리와 순회 (Tree)**  
+* **트리 (Tree)**  
 트리란 그래프의 일종으로, 사이클이 없는 연결 그래프이다.  
 순회 방법에는 전위 순회(Preorder), 중위 순회(Inorder), 후위 순회(Postorder)가 있다.  
 알고리즘 : [트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
@@ -93,7 +93,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 * **분리 집합 (Disjoint Set)**  
 두 노드가 같은 그래프에 속하는지 판별하는 알고리즘이다.  
 서로소 집합이나 상호 배타적 집합으로도 불린다.  
-알고리즘 : [유니온 파인드](https://velog.io/@mu1616/%EB%B6%84%EB%A6%AC%EC%A7%91%ED%95%A9Disjoint-set)
+알고리즘 : [Union-Find](https://velog.io/@mu1616/%EB%B6%84%EB%A6%AC%EC%A7%91%ED%95%A9Disjoint-set)
 <br><br>
 
 * **최소 신장 트리 (Minimum Spanning Tree)**  
@@ -120,12 +120,19 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 이진수를 사용하는 컴퓨터의 연산 방식을 이용해, 정수의 이진수 표현을 자료구조로 쓰는 기법이다.  
 장점 : 수행 시간이 빠르고, 메모리 사용량이 적다.  
 비트 연산자 : AND(&) , OR(|) , XOR(^) , NOT(~) , Shift(<< , >>)  
-이론 : [연산](https://github.com/jws1218/insta-clone/assets/100751725/d60da524-88a4-49df-9f6f-463462ad8fad)
+참고 : [연산](https://github.com/jws1218/insta-clone/assets/100751725/d60da524-88a4-49df-9f6f-463462ad8fad)
 <br><br>
 
-* **KMP 알고리즘**  
+* **KMP (Knuth-Morris-Pratt Algorithm)**  
 문자열 검색 알고리즘으로, 불필요한 비교를 없애 성능을 개선시킨 알고리즘이다.  
+시간과 공간 복잡도 측면에서 모두 효율적이다.  
 이론 : [KMP](https://chanhuiseok.github.io/posts/algo-14/)
+<br><br>
+
+* **트라이 (Trie)**  
+문자열을 저장하고 효율적으로 탐색하기 위한 트리 형태의 자료구조이다.  
+시간 복잡도 측면에서는 효율적이나 공간 복잡도는 비효율적일 수 있다.  
+이론 : [트라이](https://velog.io/@kimdukbae/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%9D%BC%EC%9D%B4-Trie)
 <br><br>
 
 * **위상 정렬 (Topological Sorting)**  
@@ -142,14 +149,23 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 강한 연결 요소는 부분 그래프의 모든 정점이 강하게 연결된 임의의 방향 그래프를 말한다.  
 알고리즘 :
 [코사라주](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EB%9D%BC%EC%A3%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) / 
-[타잔](https://ko.wikipedia.org/wiki/%EA%B0%95%ED%95%9C_%EC%97%B0%EA%B2%B0_%EC%9A%94%EC%86%8C)
+[타잔](https://ko.wikipedia.org/wiki/%EA%B0%95%ED%95%9C_%EC%97%B0%EA%B2%B0_%EC%9A%94%EC%86%8C)  
+참고 : [2-SAT](https://justicehui.github.io/hard-algorithm/2019/05/17/2SAT/)
 <br><br>
 
 * **세그먼트 트리 (Segment Tree)**  
 여러 개의 데이터가 존재할 때, 특정 구간의 합(최댓값, 최솟값, 곱 등)을 구하는 데 사용하는 자료구조이다.  
 이진 트리 형태이며, 특정 구간의 합을 가장 빠르게 구할 수 있다.  
 이론 : [세그먼트 트리](https://book.acmicpc.net/ds/segment-tree)  
-참고 : [느리게 갱신되는 세그먼트 트리](https://book.acmicpc.net/ds/segment-tree-lazy-propagation)
+참고 :
+[느리게 갱신되는 세그먼트 트리](https://book.acmicpc.net/ds/segment-tree-lazy-propagation) /
+[머지 소트 트리](https://justicehui.github.io/medium-algorithm/2020/02/25/merge-sort-tree/)
+<br><br>
+
+* **펜윅 트리 (Fenwick Tree , Binary Indexed Tree)**  
+세그먼트 트리의 변형으로 수열의 구간 합을 빠르게 구할 수 있도록 고안된 자료구조이다.  
+BIT(Binary Indexed Tree) 라고도 한다.  
+이론 : [펜윅 트리](https://www.acmicpc.net/blog/view/21)
 <br><br>
 
 * **스위핑 (Sweeping)**  
@@ -177,7 +193,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 * **최대 유량 (Network Flow)**  
 그래프에서 두 정점 사이에 얼마나 많은 유량(flow)을 보낼 수 있는지 계산하는 알고리즘이다.  
 최대 유량 (Maximum Flow) 혹은 네트워크 유량 (Network Flow)이라고 한다.  
-알고리즘 : [포드-풀커슨 / 에드몬드 카프](https://unorderedmap.tistory.com/6) / [디닉](https://www.crocus.co.kr/1088)
+알고리즘 : [포드-풀커슨 , 에드몬드 카프](https://unorderedmap.tistory.com/6) / [디닉](https://www.crocus.co.kr/1088)
 <br><br>
 
 * **최소 비용 최대 유량 (Minimum Cost Maximum Flow)**  
@@ -193,23 +209,23 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 이론 : [오일러 경로 테크닉](https://david0506.tistory.com/55)
 <br><br>
 
-* **Mo's Algorithm**  
-업데이트가 없는 구간 쿼리를 처리하는 알고리즘이다.  
-√decomposition와 비슷한 아이디어를 이용해 쿼리의 순서를 재배치해서 효율적으로 쿼리를 수행한다.  
-이론 : [Mo's Algorithm](https://justicehui.github.io/hard-algorithm/2019/06/17/MoAlgorithm/)  
-참고 : [Sqrt Decomposition](https://justicehui.github.io/medium-algorithm/2019/03/03/SqrtDecomposition/)
+* **오프라인 쿼리 (Offline Query)**  
+쿼리의 순서를 재배치해서 효율적으로 쿼리를 수행하는 문제이다.    
+알고리즘 :
+[Mo's](https://justicehui.github.io/hard-algorithm/2019/06/17/MoAlgorithm/) /
+[제곱근 분할법](https://book.acmicpc.net/algorithm/sqrt-decomposition)
 <br><br>
 
-* **뤼카의 정리 (Lucas Theorem)**  
+* **뤼카 정리 (Lucas Theorem)**  
 이항계수를 구하는 정리로, 빠른 시간복잡도를 가진다.  
-이론 : [뤼카의 정리](https://ps.mjstudio.net/lucas)
+이론 : [뤼카 정리](https://ps.mjstudio.net/lucas)
 <br><br>
 
 * **확장된 유클리드 호제법 (Extended Euclidean Algorithm)**  
 유클리드 알고리즘은 a, b의 최대공약수 GCD(a, b)를 구하는 알고리즘이다.  
 확장 유클리드 알고리즘은 as + bt = GCD(a, b)를 만족하게 하는 정수 s, t를 구하는 알고리즘이다.  
 gcd가 1인 경우는 모듈러 연산에서의 곱셈의 역원을 구하는데 사용하기도 한다.  
-이론 : [확장된 유클리드](https://thfist-1071.tistory.com/251)
+알고리즘 : [확장된 유클리드](https://thfist-1071.tistory.com/251)
 <br><br>
 
 * **중국인의 나머지 정리 (Chinese Remainder Theorem)**  
@@ -228,7 +244,7 @@ gcd가 1인 경우는 모듈러 연산에서의 곱셈의 역원을 구하는데
 <br><br>
 
 * **고속 푸리에 변환 (Fast Fourier Transform)**  
-두 벡터의 합성곱을 계산하는 데 유용한 알고리즘이다.
+두 벡터의 합성곱을 계산하는 데 유용한 알고리즘이다.  
 즉, 두 N차 다항식의 곱의 계수들을 빠르게 계산할 수 있는 알고리즘이다.  
 이론 : [고속 푸리에 변환](https://tistory.joonhyung.xyz/6)
 <br><br>
