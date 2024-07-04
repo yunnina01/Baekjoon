@@ -107,7 +107,7 @@ Upper Bound는 key보다 큰 값이 처음 나타나는 위치이다.
 [프림](https://namu.wiki/w/%ED%94%84%EB%A6%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 <br><br>
 
-* **CCW 알고리즘 (신발끈 공식)**  
+* **CCW (신발끈 공식)**  
 세 점의 방향 관계나 선분의 교차판별을 하는데 사용하는 알고리즘이다.  
 이론 : [신발끈 공식](https://namu.wiki/w/%EC%8B%A0%EB%B0%9C%EB%81%88%20%EA%B3%B5%EC%8B%9D)  
 세 점의 방향 관계에서 결과값이 양수이면 반시계방향, 0이면 평행, 음수이면 시계방향이다.  
@@ -193,7 +193,8 @@ BIT(Binary Indexed Tree) 라고도 한다.
 * **최대 유량 (Network Flow)**  
 그래프에서 두 정점 사이에 얼마나 많은 유량(flow)을 보낼 수 있는지 계산하는 알고리즘이다.  
 최대 유량 (Maximum Flow) 혹은 네트워크 유량 (Network Flow)이라고 한다.  
-알고리즘 : [포드-풀커슨 , 에드몬드 카프](https://unorderedmap.tistory.com/6) / [디닉](https://www.crocus.co.kr/1088)
+알고리즘 : [포드-풀커슨 , 에드몬드 카프](https://unorderedmap.tistory.com/6) / [디닉](https://www.crocus.co.kr/1088)  
+참고 : [최대 유량 최소 컷 정리](https://m.blog.naver.com/jqkt15/222063980106)
 <br><br>
 
 * **최소 비용 최대 유량 (Minimum Cost Maximum Flow)**  
@@ -201,6 +202,11 @@ BIT(Binary Indexed Tree) 라고도 한다.
 즉, 최단 거리에서의 최대 유량을 구하는 알고리즘이다.  
 이론 : [MCMF](https://www.crocus.co.kr/1090)  
 알고리즘 : [SPFA](https://gina65.tistory.com/26)
+<br><br>
+
+* **게임  이론 (Game Theory)**  
+게임 이론은 상호 의존적인 의사 결정에 관한 이론이다.  
+이론 : [스프라그-그런디 정리](https://anz1217.tistory.com/110)
 <br><br>
 
 * **오일러 경로 테크닉 (Euler Tour Technique)**  
@@ -246,22 +252,29 @@ gcd가 1인 경우는 모듈러 연산에서의 곱셈의 역원을 구하는데
 * **고속 푸리에 변환 (Fast Fourier Transform)**  
 두 벡터의 합성곱을 계산하는 데 유용한 알고리즘이다.  
 즉, 두 N차 다항식의 곱의 계수들을 빠르게 계산할 수 있는 알고리즘이다.  
-이론 : [고속 푸리에 변환](https://tistory.joonhyung.xyz/6)
+이론 : [고속 푸리에 변환](https://tistory.joonhyung.xyz/6)  
+알고리즘 : [FFT](https://restudycafe.tistory.com/563) / [NTT](https://blog.naver.com/yyhjin12/223044578555)
 <br><br>
 
-* **Manacher 알고리즘**
-
+* **Manacher**  
+문자열의 부분 문자열이 팰린드롬인지 빠르게 판단하는 알고리즘이다.  
+알고리즘 : [Manacher](https://www.crocus.co.kr/1075)
 <br><br>
 
-* **Z 알고리즘**
-
+* **Z**  
+문자열에서 특정 패턴을 찾는 패턴 검색 알고리즘이다.  
+알고리즘 : [Z](https://sgc109.tistory.com/208)
 <br><br>
 
-* **접미사 배열 / LCP 배열**
-
+* **LCP 배열 (Longest Common Prefix Array)**  
+접미사 배열 상에서 이웃한 두 접미사 간의 최장 공통 접두사의 길이를 저장한 배열이다.
+이론 : [LCP 배열](https://sgc109.tistory.com/208)
 <br><br>
 
-* **아호-코라식 알고리즘**
+* **아호-코라식 알고리즘**  
 
 <br><br>
  
+* **센트로이드 분할**  
+
+<br><br>
